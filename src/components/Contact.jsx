@@ -10,7 +10,7 @@ import mail from '../images/4.png'
 import lik from '../images/linkdin-removebg-preview.png'
 import git from '../images/github-removebg-preview.png'
 import insta from '../images/insta-removebg-preview.png'
-// import Footer from './Footer'
+import Footer from './Footer'
  
 const Contact = (props) => {
   return (
@@ -68,6 +68,7 @@ const Contact = (props) => {
       <textarea className='Message' />
       <button type='button' className='send_button'>Send Message</button>
     </div> 
+    <Footer/>
     </>
   ) 
 }

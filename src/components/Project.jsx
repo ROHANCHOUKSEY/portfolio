@@ -3,6 +3,7 @@ import ecommerce from '../images/ecommerce.png'
 import chat_hub from '../images/chat.png'
 import text_utils from '../images/textutils.png'
 import gethub from '../images/git_hub (1).png'
+import Footer from '../components/Footer'
  
 const Project = () => {
   return (
@@ -53,6 +54,7 @@ const Project = () => {
 
 
       </div>
+      <Footer/>
     </div>
   ) 
 }

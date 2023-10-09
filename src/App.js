@@ -2,14 +2,13 @@ import React, {useState} from 'react'
 import Navber from './components/Navber'
 import MainContent from './components/About'
 import Contact from './components/Contact';
-import Footer from './components/Footer';
+
 import {
   BrowserRouter as Router,
   Route,
   Routes,
 } from "react-router-dom";
 import Project from './components/Project';
-// import Footer from './components/Footer';
 
 const App = () => {
 
@@ -39,7 +38,7 @@ const tooglemode = () => {
       <Route path='/project' element={<Project/>}></Route>
     </Routes>
     </Router>
-    <Footer mode={mode}/>
+    
     </>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react' 
 // import develop from '../images/developer-removebg-preview.png' 
-// import Footer from './Footer'
+import Footer from './Footer'
 
 const MainContent = (props) => {
 
@@ -102,7 +102,8 @@ const MainContent = (props) => {
                 </div>
                 </div>  
         </div>
-                      
+        
+        <Footer/>
         </div>
     </>
     )
