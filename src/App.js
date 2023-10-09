@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react'
+import Navber from './components/Navber'
+import MainContent from './components/About'
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from "react-router-dom";
+import Project from './components/Project';
+// import Footer from './components/Footer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+
+const [mode, setMode] = useState('light');
+const[btn, setBtn] = useState("Enable Dark Mode")
+
+const tooglemode = () => {
+  if(mode === 'light')
+  {
+    setMode('#111439');
+    setBtn('Enable Light Mode');
+    document.body.style.backgroundColor = '#111439';
+  }else{
+    setMode('light');
+    setBtn('Enable Dark Mode');
+    document.body.style.backgroundColor = 'white';
+  }
 }
 
-export default App;
+  return (
+    <>
+    <Router>
+    <Navber name="Portfolio" about="About Us" contact="Contact Us" project="Project" mode={mode} tooglemode={tooglemode} btn={btn}/>
+    <Routes>
+      <Route path='/' element={<MainContent mode={mode}/>}></Route>
+      <Route path='/contact' element={<Contact mode={mode}/>}></Route>
+      <Route path='/project' element={<Project/>}></Route>
+    </Routes>
+    </Router>
+    <Footer mode={mode}/>
+    </>
+  )
+}
+
+export default App

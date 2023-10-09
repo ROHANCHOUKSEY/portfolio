@@ -1,0 +1,229 @@
+.navber{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: lightblue;
+    padding: 10px;
+    height: 55px;
+  }
+  
+  .topleft {
+    flex: 1; /* This will make it take up all available space on the left */
+  }
+  
+  .topright {
+    display: flex; /* Display the items inside topright as a flex container */
+    gap: 20px; /* Add some spacing between the items */
+    margin: 14px;
+  }
+  
+  /* Add styles for individual items if needed */
+  .name {
+    font-weight: bold;
+    font-size: 44px;
+  }
+  
+  /* Style for the links in the topright section */
+  .about,
+  .contact,
+  .project {
+    text-decoration: none;
+    color: lightblue;
+    transition: color 0.3s;
+  }
+  
+  .about:hover,
+  .contact:hover,
+  .project:hover {
+    /* color: red; */
+  }
+  
+
+  .maincontent{
+    /* background-color: white;  */
+    color: black;
+    height: 100vh;
+  }
+
+  .headding{
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 63px;
+    font-size: 31px;
+    font-weight: bold;
+    color: cadetblue;
+    text-decoration: underline;
+    padding-bottom: 65px;
+  }
+
+  .headding:hover{
+    color: red;
+  }
+
+  .name2{
+    display: flex;
+    justify-content: center;
+  }
+
+  .intro{
+    display: flex;
+    justify-content: center;
+  }
+
+  .contactHeading{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 31px;
+    font-weight: bolder;
+    color: cadetblue;
+    text-decoration: underline;
+    padding-bottom: 65px;
+  }
+
+  .contactHeading:hover{
+    color: red;
+  }
+
+  .formcontainer{
+    height: 409px;
+    width: 40%;
+    position: relative;
+    left: 55%;
+    bottom: 333px;
+    border-radius: 16px;
+  }
+
+  .send-message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: -30px;
+    
+  }
+
+  .Name_heading{
+    position: relative;
+    left: 56px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .form_name{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+    bottom: 15px;
+  }
+
+  .Email_heading{
+    position: relative;
+    left: 54px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .Email{
+    position: relative;
+    left: 53px;
+    bottom: 15px;
+    width: 79%;
+  }
+
+  .Message_heading{
+    position: relative;
+    left: 54px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .Message{
+    position: relative;
+    bottom: 15px;
+    left: 53px;
+    width: 79%;
+}
+
+.send_button{
+  display: flex;
+  margin-left: 53px;
+  border-radius: 5px;
+  border: none;
+  background-color: #111439;
+  color: white;
+  padding:10px;
+}
+
+.container{
+  position: relative;
+  top: 21px;
+  right: 94px;
+}
+
+.address{
+  display: grid;
+  justify-content: center;
+  margin-right: 385px;
+  margin-bottom: 10px;
+}
+
+.full_add{
+  display: flex;
+  align-items: center;
+  margin-left: 83px;
+  margin-top: -37px;
+}
+
+.mobile{
+  display: grid;
+  justify-content: center;
+  margin-right: 492px;
+  margin-bottom: 10px;
+}
+
+.mobileno{
+  display: flex;
+  align-items: center;
+  margin-left: 61px;
+  margin-top: -29px;
+}
+
+.whatapp{
+  display: grid;
+  justify-content: center;
+  margin-right: 452px;
+  margin-bottom: -4px;
+} 
+
+.whatappno{
+  display: flex;
+  align-items: center;
+  margin-left: 58px;
+  margin-top: -25px;
+}
+
+.email{
+  display: grid;
+  justify-content: center;
+  margin-right: 380px;
+  margin-bottom: 10px;
+}
+
+.email_id{
+  display: flex;
+  align-items: center;
+  margin-left: 71px;
+  margin-top: -45px;
+}
+
+.information{
+  font-size: 22px;
+  font-weight: bold;
+}
+
