@@ -35,7 +35,7 @@ const tooglemode = () => {
     <Routes>
       <Route path='/' element={<MainContent mode={mode}/>}></Route>
       <Route path='/contact' element={<Contact mode={mode}/>}></Route>
-      <Route path='/project' element={<Project/>}></Route>
+      <Route path='/project' element={<Project mode={mode}/>}></Route>
     </Routes>
     </Router>
     

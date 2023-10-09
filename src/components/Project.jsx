@@ -5,7 +5,12 @@ import text_utils from '../images/textutils.png'
 import gethub from '../images/git_hub (1).png'
 import Footer from '../components/Footer'
  
-const Project = () => {
+const Project = (props) => {
+
+  let footerStyle = {
+    color:props.mode==='#111439'?'white':'black'
+  }
+
   return (
     <div>
       <div className='project_intro'>Projects</div>
@@ -54,7 +59,9 @@ const Project = () => {
 
 
       </div>
+      <div className="footer" style={footerStyle}>
       <Footer/>
+      </div>
     </div>
   ) 
 }

@@ -13,6 +13,11 @@ import insta from '../images/insta-removebg-preview.png'
 import Footer from './Footer'
  
 const Contact = (props) => {
+
+  let footerStyle = {
+    color:props.mode==='#111439'?'white':'black'
+  }
+
   return (
     <>
     <div className='contactHeading'>CONTACT US</div>
@@ -68,7 +73,11 @@ const Contact = (props) => {
       <textarea className='Message' />
       <button type='button' className='send_button'>Send Message</button>
     </div> 
-    <Footer/>
+    
+    <div className="footer" style={footerStyle}>
+      <Footer/>
+    </div>
+    
     </>
   ) 
 }

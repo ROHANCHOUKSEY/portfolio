@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Footer = (props) => {
+const Footer = () => {
   return (
-    <div className={`footer text-${props.mode==='#111439' ? 'light' : 'dark'}`}>
-        <p>© 2023 Copyright : Portfolio.com</p>
-    </div>
+    <>
+      <p>© 2023 Copyright : Portfolio.com</p>
+    </>
   )
 }
 

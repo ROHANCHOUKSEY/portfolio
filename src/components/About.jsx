@@ -8,6 +8,10 @@ const MainContent = (props) => {
         backgroundColor:props.mode === '#111439' ? '#111439' : 'white',
         color:props.mode === '#111439' ? 'white' : 'black',
     }
+
+    let footerStyle = {
+        color:props.mode==='#111439'?'white':'black'
+    }
     
     return(
     <>  
@@ -103,7 +107,10 @@ const MainContent = (props) => {
                 </div>  
         </div>
         
-        <Footer/>
+        <div className="footer" style={footerStyle}>
+            <Footer/>
+        </div>
+        
         </div>
     </>
     )
