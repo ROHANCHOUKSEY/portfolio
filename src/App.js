@@ -9,6 +9,7 @@ import {
   Routes,
 } from "react-router-dom";
 import Project from './components/Project';
+import Design from './components/Design';
 
 const App = () => {
 
@@ -31,11 +32,12 @@ const tooglemode = () => {
   return (
     <>
     <Router>
-    <Navber name="Portfolio" about="About Us" contact="Contact Us" project="Project" mode={mode} tooglemode={tooglemode} btn={btn}/>
+    <Navber name="Portfolio" about="About Us" contact="Contact Us" project="Project" design="Design" mode={mode} tooglemode={tooglemode} btn={btn}/>
     <Routes>
       <Route path='/' element={<MainContent mode={mode}/>}></Route>
       <Route path='/contact' element={<Contact mode={mode}/>}></Route>
       <Route path='/project' element={<Project mode={mode}/>}></Route>
+      <Route path='/design' element={<Design mode={mode}/>}></Route>
     </Routes>
     </Router>
     

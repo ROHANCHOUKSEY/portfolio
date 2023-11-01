@@ -24,7 +24,7 @@ const MainContent = (props) => {
             </div>
             {/* <img src={develop} alt="Developer" className="developer-img" /> */}
             <div className="academic-info" style={myStyle}>
-                        <h2>Academic Information</h2>
+                        <h2 style={{color:'cadetblue', textDecoration:'underline'}}>Academic Information</h2>
                         <p>4th Year Student</p>
                         <p>7th Semester</p>
                         <p>Current CGPA: 8.53</p>
