@@ -3,43 +3,70 @@ import Footer from '../components/Footer';
 import shoes from '../Figma/1.png';
 import watch from '../Figma/3.png';
 import dress from '../Figma/Desktop - 1.png';
-import spotify from '../Figma/Spotify.png'
+import spotify from '../Figma/Spotify.png';
 
 const Project = (props) => {
+  const [isImageOpen, setIsImageOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openImage = (image) => {
+    setIsImageOpen(true);
+    setSelectedImage(image);
+  };
+
+  const closeImage = () => {
+    setIsImageOpen(false);
+    setSelectedImage(null);
+  };
+
   let footerStyle = {
     color: props.mode === '#111439' ? 'white' : 'black'
-  };
-
-  // Define a state variable to track whether the image is clicked or not
-  const [imageClicked, setImageClicked] = useState(false);
-
-  const [fullImg, setFullImg] = useState(''); // Store the full image source
-
-  const openFullImg = (pic) => {
-    setFullImg(pic);
-    setImageClicked(true);
-  };
-
-  const closeFullImg = () => {
-    setFullImg('');
-    setImageClicked(false);
   };
 
   return (
     <div>
       <div className='project_intro'>Design</div>
 
-      <div className={`full-image ${imageClicked ? 'show' : 'hide'}`}>
-        <img src={fullImg} id="fullImg" alt="Full Image" />
-        <span onClick={closeFullImg}>X</span>
+      <div className="image-gallery">
+        <img
+          src={spotify}
+          className="figma_design"
+          alt="Spotify"
+          onClick={() => openImage(spotify)}
+        />
+        <img
+          src={shoes}
+          className="figma_design"
+          alt="Shoes"
+          onClick={() => openImage(shoes)}
+        />
+        <img
+          src={watch}
+          className="figma_design"
+          alt="Watch"
+          onClick={() => openImage(watch)}
+        />
+        <img
+          src={dress}
+          className="figma_design"
+          alt="Dress"
+          onClick={() => openImage(dress)}
+        />
       </div>
 
-      <div className="image-gallery">
-        <img src={spotify} onClick={() => openFullImg(shoes)} alt="Shoes" />
-        <img src={shoes} onClick={() => openFullImg(shoes)} alt="Shoes" />
-        <img src={watch} onClick={() => openFullImg(watch)} alt="Watch" />
-        <img src={dress} onClick={() => openFullImg(dress)} alt="Dress" />
-      </div>
+      {isImageOpen && selectedImage && (
+        <div className="image-modal">
+          <div style={{cursor:'pointer'}} className="close-button" onClick={closeImage}>
+            X
+          </div>
+          <img
+            src={selectedImage}
+            alt="Selected"
+            className="modal-image"
+            style={{width:'90%', maxWidth:'700px',}}
+          />
+        </div>
+      )}
 
       <div className="footer" style={footerStyle}>
         <Footer />
