@@ -5,6 +5,8 @@ import watch from '../Figma/3.png';
 import dress from '../Figma/Desktop - 1.png';
 import spotify from '../Figma/Spotify.png';
 import shoes_website from '../Figma/shoes.png';
+import shoes_website2 from '../Figma/MacBook Air - 1.png';
+import car_Reant from '../Figma/Car Rent.png';
 
 const Project = (props) => {
   const [isImageOpen, setIsImageOpen] = useState(false);
@@ -60,6 +62,21 @@ const Project = (props) => {
           alt="Dress"
           onClick={() => openImage(shoes_website)}
         />
+
+        <img
+          src={shoes_website2}
+          className="figma_design"
+          alt="Dress"
+          onClick={() => openImage(shoes_website2)}
+        />
+
+        <img
+          src={car_Reant}
+          className="figma_design"
+          alt="Dress"
+          onClick={() => openImage(car_Reant)}
+        />
+
       </div>
 
       {isImageOpen && selectedImage && (
