@@ -26,8 +26,8 @@ const MainContent = (props) => {
             <div className="academic-info" style={myStyle}>
                         <h2 style={{color:'cadetblue', textDecoration:'underline'}}>Academic Information</h2>
                         <p>4th Year Student</p>
-                        <p>7th Semester</p>
-                        <p>Current CGPA: 8.53</p>
+                        <p>8th Semester</p>
+                        <p>Current CGPA: 8.59</p>
             </div>
             </div>
 
@@ -57,7 +57,7 @@ const MainContent = (props) => {
                 <div class="accordion-item" style={{border:'none'}}>
                 <h2 class="accordion-header" >
                 <button class="accordion-button collapsed" style={myStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                WEB DEVELOPMENT
+                OTHER
                 </button> 
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -80,7 +80,7 @@ const MainContent = (props) => {
                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                 <ul>
-                    <li>Leet Code(150+ Question)</li>
+                    <li>Leet Code(200+ Question)</li>
                     <li>Geeks For Geeks</li>
                     <li>Hacker Rank</li>
                 </ul>

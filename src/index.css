@@ -50,7 +50,8 @@
   font-size: 31px;
   font-weight: bold;
   color: cadetblue;
-  text-decoration: underline;
+  font-family: serif;
+  /* text-decoration: underline; */
   padding-bottom: 20px;
 }
 
@@ -331,8 +332,10 @@
   color: cadetblue;
   font-size: 31px;
   font-weight:bold;
-  text-decoration: underline;
-  margin-bottom: 25px;}
+  /* text-decoration: underline; */
+  margin-bottom: 25px;
+  font-family: serif;
+}
 
 .project_intro:hover{
   color: red;
@@ -401,6 +404,7 @@
   font-weight: bold;
   text-decoration: underline;
   margin-bottom: 25px;
+  font-family: serif;
 }
 
 .Design-intro:hover{
@@ -542,3 +546,112 @@
     left: 20%;
   }
 }
+
+.heading_Contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: cadetblue;
+  font-size: 31px;
+  font-weight: bold;
+  font-family: serif;
+  /* text-decoration: underline; */
+  margin-bottom: 25px;
+}
+
+.heading_Contact:hover{
+  color: red;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.contact-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 230px;
+  position: relative;
+  top: 30px;
+}
+
+.contact-image {
+  display: flex;
+  align-items: center;
+}
+
+.contact-image img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+
+.contact-form {
+  max-width: 400px; /* Adjust the max-width as needed */
+  margin: auto;
+  margin-right: 130px; /* Adjust the right margin as needed */
+  margin-bottom: 15px;
+}
+
+.form-group{
+  font-size: 15px; /* Adjust the font-size as needed */
+}
+
+.form-control {
+  font-size: 16px; /* Adjust the font-size as needed */
+  margin-bottom: 15px; /* Adjust the margin-bottom as needed */
+}
+
+.form-control::placeholder {
+  font-size: 16px; /* Adjust the placeholder font-size as needed */
+}
+
+.btn-primary {
+  font-size: 16px; /* Adjust the font-size as needed */
+}
+
+
+.other-contacts{
+  position: relative;
+  bottom: 100px;
+  margin-left: 254px;
+}
+
+.other-contacts h2{
+  color: black;
+  font-size: 16px;
+  font-family: serif;
+}
+
+.other-contact-images {
+  display: flex;
+  gap: 20px;
+  margin-left: -6px;
+}
+
+.other-contact-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.other-contact-image img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+
+
+
+
+
+
+
+
+
