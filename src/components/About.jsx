@@ -49,6 +49,7 @@ const MainContent = (props) => {
                 <ul>
                     <li>C/C++</li>
                     <li>Java</li>
+                    <li>Data Structures & Algorithms</li>
                     <li>Object Oriented Programming</li>
                 </ul>
                 </div>
